@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <link rel="stylesheet" href="../css/crew.css">
+  <link rel="stylesheet" href="../css/topbar_mobile.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <div class="topbar">
+    <div class="logo_box">
+      <iframe src="../assets/shared/logo.svg" frameborder="0"></iframe>
+    </div>
+    <div class="line"></div>
+    <ul class="topnav font2">
+      <li><a href="#" data-id="0"><span>00</span> Home</a></li>
+      <li><a href="#" data-id="1"><span>01</span> Destination</a></li>
+      <li><a href="#" class="active" data-id="2"><span>02</span> Crew</a></li>
+      <li><a href="#" data-id="3"><span>03</span> Technology</a></li>
+    </ul>
+  </div>
+  <!-- 菜单栏 -->
+  <div class="mobile_menu">
+    <div class="topbar_mobile">
+      <div class="logo_box">
+        <iframe src="../assets/shared/logo.svg" frameborder="0"></iframe>
+      </div>
+      <div class="topbar_box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="topbar_nav">
+      <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+            <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+          </g>
+        </svg>
+      </div>
+      <ul class="topnav_mobile font2">
+        <li><a href="#" class="active" data-id="0"><span>00</span> Home</a></li>
+        <li><a href="#" data-id="1"><span>01</span> Destination</a></li>
+        <li><a href="#" data-id="2"><span>02</span> Crew</a></li>
+        <li><a href="#" data-id="3"><span>03</span> Technology</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 主体 -->
+  <h3 class="font2"><span>02</span>MEET YOUR CREW</h3>
+  <div class="peopleBox">
+    <div class="peopleImg_mobile"></div>
+    <div class="people">
+      <ul class="bottomnav bottomnav_mobile">
+        <li><a href="#" class="active" data-id="0"></a></li>
+        <li><a href="#" data-id="1"></a></li>
+        <li><a href="#" data-id="2"></a></li>
+        <li><a href="#" data-id="3"></a></li>
+      </ul>
+      <div class="des">
+        <h4 class="font1" id="role">COMMANDER</h4>
+        <h2 class="font1" id="name">DOUGLAS HURLEY</h2>
+        <p class="font3">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.</p>
+      </div>
+      <ul class="bottomnav bottomnav_nomobile">
+        <li><a href="#" class="active" data-id="0"></a></li>
+        <li><a href="#" data-id="1"></a></li>
+        <li><a href="#" data-id="2"></a></li>
+        <li><a href="#" data-id="3"></a></li>
+      </ul>
+    </div>
+    <div class="peopleImg"></div>
+  </div>
+</body>
+<script type="text/javascript" src="../js/topbar.js"></script>
+<!-- 引入菜单栏 -->
+<script type="text/javascript" src="../js/topbar_mobile.js"></script>
+<script type="text/javascript" src="../js/bottomnav.js"></script>
+
+</html>

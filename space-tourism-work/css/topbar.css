@@ -1,0 +1,109 @@
+.topbar {
+    position: relative;
+    height: 96px;
+    line-height: 96px;
+
+    @media screen and (min-width: 375px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 100vw;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: block;
+        width: 1440px;
+        margin-top: 40px;
+    }
+}
+
+.topbar .logo_box {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-left: 55px;
+    margin-top: 24px;
+    background-color: var(--home-foreground);
+    border-radius: 50%;
+}
+
+/* 线条 */
+.line {
+    /* 置于最顶层 */
+    position: absolute;
+    z-index: 999;
+    float: left;
+    height: 1px;
+    margin-top: 48px;
+    margin-left: 166px;
+    background-color: var(--home-foreground-25);
+
+    /* 可以将 @media 样式写在相应元素样式上下文附近，而不是在样式的文件最底部或单独的样式文件中编写，更利于后期的维护。 */
+    @media screen and (min-width: 768px) {
+        width: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 473px;
+    }
+}
+
+.topbar .topnav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 100%;
+    background-color: var(--home-foreground-nav);
+    backdrop-filter: blur(30px);
+
+    @media screen and (min-width: 768px) {
+        width: 473px;
+        padding-left: 72px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 830px;
+        padding-left: 110px;
+    }
+}
+
+.topbar .topnav a {
+    display: inline-block;
+    height: 96px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 20px;
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        margin-left: 50px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+}
+
+.topbar .topnav .active {
+    border-bottom: 3px solid var(--home-foreground);
+}
+
+.topbar .topnav a span {
+    font-weight: bold;
+    margin-right: 12px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1440px) {
+        display: inline-block;
+    }
+}
+
+.topbar .topnav a:hover {
+    border-bottom: 3px solid var(--home-foreground-hover);
+}
